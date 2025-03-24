@@ -1,0 +1,81 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+<div class="layout-container">
+
+  <header role="banner">
+    {{ page.header }}
+  </header>
+
+  {{ page.alert }}
+
+  {{ page.highlighted }}
+
+  {{ page.breadcrumb }}
+
+  {{ page.help }}
+
+  <main class="container mx-auto" role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    {% set content_col_span = 'md:col-span-8' %}
+    {% if page.sidebar_left and page.sidebar_right %}
+      {% set content_col_span = 'md:col-span-6' %}
+    {% elseif page.sidebar_left or page.sidebar_right %}
+      {% set content_col_span = 'md:col-span-7' %}
+    {% endif %}
+
+    <div class="grid gap-4 md:grid-flow-col md:auto-cols-max md:grid-cols-8">
+      <div class="md:order-2 {{ content_col_span }}">
+        {{ page.content }}
+      </div>
+
+      {% if page.sidebar_left %}
+        <aside class="md:order-1 md:col-span-1" role="complementary">
+          {{ page.sidebar_left }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_right %}
+        <aside class="md:order-3 md:col-span-1" role="complementary">
+          {{ page.sidebar_right }}
+        </aside>
+      {% endif %}
+    </div>
+
+  </main>
+
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+
+</div>

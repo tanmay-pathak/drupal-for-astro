@@ -1,0 +1,22 @@
+uuid: ade3a539-6e39-4f9d-88fa-b11ffc7c6f8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rapidkit_theme
+_core:
+  default_config_hash: Uk2YJID9CcQgX_5Uq-V-3P-ZHzj-VBX-HifPbYy1MBA
+id: rapidkit_theme_mainpagecontent
+theme: rapidkit_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

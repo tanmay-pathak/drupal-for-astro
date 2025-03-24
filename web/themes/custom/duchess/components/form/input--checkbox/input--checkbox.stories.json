@@ -1,0 +1,12 @@
+{
+  "title": "Form/Input Checkbox",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/duchess/components/form/input--checkbox/input--checkbox.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {}
+    }
+  ]
+}

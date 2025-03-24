@@ -1,0 +1,12 @@
+{
+  "title": "Form/Input Radio",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/duchess/components/form/input--radio/input--radio.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {}
+    }
+  ]
+}
