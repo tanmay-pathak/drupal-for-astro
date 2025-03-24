@@ -31,6 +31,8 @@
     "drupal/core-recommended": "~10.3.2",
     "drupal/dotenv": "^1.2",
     "drupal/guardr_core": "^2.1",
+    "drupal/jsonapi_extras": "^3.26",
+    "drupal/restui": "^1.22",
     "drush/drush": "^12 || ^13",
     "wikimedia/composer-merge-plugin": "^2.1",
     "zucommunications/rapidkit_content_features": "^1.1",

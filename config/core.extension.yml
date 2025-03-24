@@ -40,6 +40,8 @@ module:
   image: 0
   inline_entity_form: 0
   js_cookie: 0
+  jsonapi: 0
+  jsonapi_extras: 0
   link: 0
   linkit: 0
   login_history: 0
@@ -67,6 +69,7 @@ module:
   schema_metatag: 0
   seckit: 0
   security_review: 0
+  serialization: 0
   session_limit: 0
   shortcut: 0
   svg_image: 0
@@ -96,4 +99,5 @@ theme:
   claro: 0
   stable9: 0
   rapidkit_theme: 0
+  duchess: 0
 profile: rapidkit_profile
