@@ -1,0 +1,12 @@
+{
+  "title": "Form/Input Textfield",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/duchess/components/form/input--textfield/input--textfield.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {}
+    }
+  ]
+}

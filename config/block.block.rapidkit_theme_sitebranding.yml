@@ -1,0 +1,25 @@
+uuid: 79417892-f615-44b6-9f3c-3df27e8341bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rapidkit_theme
+_core:
+  default_config_hash: 9MK8NBMqcRH4kzKvDz0UJ1Q6F5BAZmoluqf0VBvcACw
+id: rapidkit_theme_sitebranding
+theme: rapidkit_theme
+region: header
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

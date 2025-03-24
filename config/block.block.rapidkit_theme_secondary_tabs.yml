@@ -1,0 +1,22 @@
+uuid: 7d8329ea-97f3-4985-b968-563fb23bdb25
+langcode: en
+status: true
+dependencies:
+  theme:
+    - rapidkit_theme
+_core:
+  default_config_hash: asg5RDoJvX2zJEGUHT0ZoIcwFFog5Ac7ShKM7PRq_NY
+id: rapidkit_theme_secondary_tabs
+theme: rapidkit_theme
+region: highlighted
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: b2a70fe8-1e8e-4650-b12c-1f9bfd9d82b6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - stable9
+_core:
+  default_config_hash: _oPFQPWG1oMMJCmgc-_sr5dpUJTYwSMZC6NI7vZVlsw
+id: stable9_primaryadminactions
+theme: stable9
+region: highlighted
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

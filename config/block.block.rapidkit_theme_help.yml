@@ -1,0 +1,22 @@
+uuid: 87ab6b9f-7445-4396-9530-1a82acd59ab9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - rapidkit_theme
+_core:
+  default_config_hash: 8nuzNW-N27c6BrtX9OgMZfTmjt7DwRzrGyLRYVmQCOs
+id: rapidkit_theme_help
+theme: rapidkit_theme
+region: content_above
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

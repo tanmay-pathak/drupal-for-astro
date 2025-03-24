@@ -1,0 +1,4 @@
+FROM mariadb:11
+
+# Copy the backup file into the container's initialization directory
+COPY .coolify/backup_db.sql.gz /docker-entrypoint-initdb.d/

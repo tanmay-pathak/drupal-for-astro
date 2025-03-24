@@ -1,0 +1,21 @@
+name: duchess
+type: theme
+description: 'A base Drupal theme, made with ❤️ by zu.'
+version: 1.0.0
+logo: logo.png
+core_version_requirement: ^10
+'base theme': stable9
+libraries:
+  - duchess/app
+generator: 'rapidkit_theme:1.7.0'
+regions:
+  header: Header
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content_above: 'Content Above'
+  sidebar_left: 'Left Sidebar'
+  sidebar_right: 'Right Sidebar'
+  content: Content
+  footer: Footer
+ckeditor5-stylesheets:
+  - dist/app.css

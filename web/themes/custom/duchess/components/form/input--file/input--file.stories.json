@@ -1,0 +1,12 @@
+{
+  "title": "Form/Input File",
+  "parameters": {
+    "fileName": "/app/web/themes/contrib/duchess/components/form/input--file/input--file.stories.json"
+  },
+  "stories": [
+    {
+      "name": "default",
+      "args": {}
+    }
+  ]
+}

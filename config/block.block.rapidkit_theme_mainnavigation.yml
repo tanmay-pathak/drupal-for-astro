@@ -1,0 +1,27 @@
+uuid: 06c7311d-b547-4ce6-891b-cf52870c22b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - rapidkit_theme
+_core:
+  default_config_hash: YWI0eOqIn3Y8X-ZNV-2oYU0x-0oOJKjs7M_uv8e7hKk
+id: rapidkit_theme_mainnavigation
+theme: rapidkit_theme
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
