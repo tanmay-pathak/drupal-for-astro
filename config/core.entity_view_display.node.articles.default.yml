@@ -1,0 +1,38 @@
+uuid: e5f23236-148a-49d1-97ee-46e70dcce598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.articles.body
+    - field.field.node.articles.field_read_min
+    - node.type.articles
+  module:
+    - text
+    - user
+id: node.articles.default
+targetEntityType: node
+bundle: articles
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_read_min:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

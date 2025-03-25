@@ -1,0 +1,23 @@
+uuid: 49bd822c-fe76-418c-9ded-5ae862207059
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_read_min
+    - node.type.articles
+id: node.articles.field_read_min
+field_name: field_read_min
+entity_type: node
+bundle: articles
+label: 'Read Min'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

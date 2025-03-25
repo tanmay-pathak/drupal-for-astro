@@ -1,0 +1,28 @@
+uuid: 27bc00db-23e3-4b54-bf89-bd21951cf714
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_member.field_description
+    - field.field.node.team_member.field_headshot
+    - field.field.node.team_member.field_leadership
+    - field.field.node.team_member.field_position
+    - node.type.team_member
+  module:
+    - user
+id: node.team_member.teaser
+targetEntityType: node
+bundle: team_member
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_headshot: true
+  field_leadership: true
+  field_position: true

@@ -1,0 +1,23 @@
+uuid: c80c2f1f-1f8f-4f8c-80ce-305ec5937b85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leadership
+    - node.type.team_member
+id: node.team_member.field_leadership
+field_name: field_leadership
+entity_type: node
+bundle: team_member
+label: Leadership
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
