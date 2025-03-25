@@ -32,6 +32,7 @@
     "drupal/dotenv": "^1.2",
     "drupal/guardr_core": "^2.1",
     "drupal/jsonapi_extras": "^3.26",
+    "drupal/jsonapi_image_styles": "^3.0",
     "drupal/restui": "^1.22",
     "drush/drush": "^12 || ^13",
     "wikimedia/composer-merge-plugin": "^2.1",
